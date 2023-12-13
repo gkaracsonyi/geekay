@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server Info - SID: #318</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="https://geekay.one/media-assets/g.png">
+    <script defer>
+        function showCurrentTime() {
+            const currentTime = new Date();
+            const timeElement = document.getElementById("time");
+            const formattedTime = currentTime.toLocaleTimeString('en-US', { hour12: false });
+            timeElement.textContent = formattedTime;
+        }
+
+        window.addEventListener('load', showCurrentTime);
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header">
+            <div class="title">
+                <h1>Server Info</h1>
+            </div>
+            <div class="subtext">
+                <p>What is my purpose?</p>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="info">
+            <p><b>Server Name: </b>geekay</p>
+            <p><b>Local Time: </b><span id="time"></span></p>
+            <p><b>Local IP Address: </b>192.168.1.217</p>
+            <p><b>Ports: </b>80, 443, 25565, 25570, 32400</p>
+            <p><b>Contact Phone: </b>+1 (203) 870-5004</p>
+            <p><b>Contact Email: </b>karacsonyi.george@gmail.com</p>
+        </div>
+        <div>
+            <div class="subhead">
+                <h2>This Server is Running:</h2>
+            </div>
+            <div class="logos">
+                <a href="https://www.apache.org/" target="_blank">
+                    <div class="logo">
+                        <img class="logo-img" src="img/apache_logo.png" alt="Apache web hosting logo">
+                    </div>
+                </a>
+                <a href="https://nodejs.org/en/about" target="_blank">
+                    <div class="logo">
+                        <img class="logo-img" src="img/nodejs_logo.svg" alt="Node.js server logo">
+                    </div>
+                </a>
+                <a href="https://www.plex.tv/about/" target="_blank">
+                    <div class="logo">
+                        <img class="logo-img" src="img/plex_logo.svg" alt="Plex Media Server logo">
+                    </div>
+                </a>
+                <a href="https://www.minecraft.net/en-us" target="_blank">
+                    <div class="logo">
+                        <img class="logo-img" src="img/minecraft_logo.png" alt="Minecraft logo">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

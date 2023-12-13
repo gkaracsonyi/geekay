@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+============================================================
+File name: final-exam-grade-calc/index.html
+  Purpose: calculate grade needed on exam to achieve
+           a spceified grade in course.
+   Author: George Karacsonyi
+  Updated: March 16th, 2023 @ 7:07pm EST
+============================================================
+-->
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="calculateMinGrade.js"></script>
+    <title>Final Exam Grade Calculator</title>
+    <link rel="icon" type="image/x-icon" href="calc.png">
+</head>
+
+<body>
+
+    <main>
+
+        <header>
+
+            <h1>Final Exam Grade Calculator</h1>
+
+        </header>
+
+        <form>
+            <div class="field">
+                <label for="currentAve">Enter current grade. (Ex. 85.78):</label>
+                <input type="text" id="currentAve" name="currentAve" />
+            </div>
+            <div class="field">
+                <label for="testWeight">Enter test weight as an integer. (Ex. 25):</label>
+                <input type="text" id="testWeight" name="testWeight" />
+            </div>
+            <div class="field">
+                <label for="minFinal">Enter final average you want. (Ex. 89.50):</label>
+                <input type="text" id="minFinal" name="minFinal" />
+            </div>
+            <br><br>
+            <button type="button" onclick="calculateMinGrade()">Calculate Minimum Test Grade</button>
+        </form>
+
+        <br>
+
+        <h3>Minimum Grade Required:</h3>
+        <p id="result"></p>
+
+        <br><br><br><br><br><br><br><br><br>
+
+        <footer>
+
+            <p>Final Exam Grade Calculator created by George Karacsonyi - Mar. 2023</p>
+
+            <a class=home href="../">Return Home</a>
+
+        </footer>
+
+    </main>
+
+</body>
+
+</html>
